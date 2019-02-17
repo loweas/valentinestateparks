@@ -34,3 +34,4 @@ When you zoom in to 8, the parks unique hashtag used on Instagram is revealed.
 [OregonExplore]: https://oregonexplorer.info/
 [Inkscape]: https://inkscape.org/
 [mapbox]: https://www.mapbox.com/
+[Oregonstateparks.org]: https://oregonstateparks.org/index.cfm?do=visit.dsp_find
