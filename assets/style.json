@@ -11,8 +11,8 @@
             "ios": "4.6.0"
         }
     },
-    "center": [-122.44452075662366, 45.48388925375764],
-    "zoom": 8.226343628710428,
+    "center": [-120.37290439353933, 44.419288260734305],
+    "zoom": 5.571851255893916,
     "bearing": 0,
     "pitch": 0,
     "sources": {
@@ -810,7 +810,10 @@
                     ]
                 ],
                 "text-max-angle": 30,
-                "text-font": ["Roboto Regular", "Arial Unicode MS Regular"],
+                "text-font": [
+                    "Spectral ExtraLight Italic",
+                    "Spectral ExtraLight Italic"
+                ],
                 "symbol-placement": "line",
                 "text-padding": 1,
                 "text-rotation-alignment": "map",
@@ -842,7 +845,10 @@
                 ],
                 "icon-image": ["concat", ["get", "maki"], "-11"],
                 "text-max-angle": 38,
-                "text-font": ["Roboto Regular", "Arial Unicode MS Regular"],
+                "text-font": [
+                    "Spectral Medium Italic",
+                    "Arial Unicode MS Regular"
+                ],
                 "text-padding": 2,
                 "text-offset": [0, 0.75],
                 "text-anchor": "top",
@@ -881,7 +887,10 @@
                     13,
                     ["concat", ["get", "maki"], "-15"]
                 ],
-                "text-font": ["Roboto Regular", "Arial Unicode MS Regular"],
+                "text-font": [
+                    "Spectral ExtraLight Italic",
+                    "Spectral ExtraLight Italic"
+                ],
                 "text-padding": 2,
                 "text-offset": [0, 0.75],
                 "text-anchor": "top",
@@ -923,7 +932,10 @@
                 "text-transform": "uppercase",
                 "text-letter-spacing": 0.15,
                 "text-max-width": 8,
-                "text-font": ["Roboto Regular", "Arial Unicode MS Regular"],
+                "text-font": [
+                    "Spectral Light Italic",
+                    "Spectral ExtraLight Italic"
+                ],
                 "text-padding": 3,
                 "text-size": [
                     "interpolate",
@@ -972,7 +984,10 @@
                 "text-font": [
                     "step",
                     ["zoom"],
-                    ["literal", ["Roboto Regular", "Arial Unicode MS Regular"]],
+                    [
+                        "literal",
+                        ["Spectral Italic", "Arial Unicode MS Regular"]
+                    ],
                     12,
                     [
                         "match",
@@ -980,11 +995,17 @@
                         "town",
                         [
                             "literal",
-                            ["Roboto Medium", "Arial Unicode MS Regular"]
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Regular"
+                            ]
                         ],
                         [
                             "literal",
-                            ["Roboto Regular", "Arial Unicode MS Regular"]
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Regular"
+                            ]
                         ]
                     ]
                 ],
@@ -1023,21 +1044,59 @@
                 "text-font": [
                     "step",
                     ["zoom"],
-                    ["literal", ["Oswald Regular", "Arial Unicode MS Regular"]],
+                    [
+                        "literal",
+                        ["Spectral Light Italic", "Arial Unicode MS Regular"]
+                    ],
+                    9.25,
+                    [
+                        "step",
+                        ["get", "symbolrank"],
+                        [
+                            "literal",
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Bold"
+                            ]
+                        ],
+                        5,
+                        [
+                            "literal",
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Regular"
+                            ]
+                        ]
+                    ],
                     14,
                     [
                         "step",
                         ["get", "symbolrank"],
-                        ["literal", ["Roboto Bold", "Arial Unicode MS Bold"]],
+                        [
+                            "literal",
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Bold"
+                            ]
+                        ],
                         5,
                         [
                             "literal",
-                            ["Roboto Medium", "Arial Unicode MS Regular"]
+                            [
+                                "Spectral ExtraLight Italic",
+                                "Arial Unicode MS Regular"
+                            ]
                         ]
                     ]
                 ],
                 "text-max-width": 10,
-                "text-field": ["coalesce", ["get", "name_en"], ["get", "name"]],
+                "text-field": [
+                    "step",
+                    ["zoom"],
+                    ["coalesce", ["get", "name_en"], ["get", "name"]],
+                    22,
+                    ["coalesce", ["get", "name_en"], ["get", "name"]]
+                ],
                 "text-rotate": -20
             },
             "paint": {
@@ -1054,43 +1113,6 @@
                 "text-halo-color": "hsla(0, 0%, 100%, 0.95)",
                 "text-halo-width": 1.25,
                 "text-opacity": 1
-            }
-        },
-        {
-            "id": "state-label",
-            "type": "symbol",
-            "source": "composite",
-            "source-layer": "place_label",
-            "minzoom": 4,
-            "maxzoom": 8,
-            "filter": ["==", ["get", "type"], "state"],
-            "layout": {
-                "text-size": [
-                    "interpolate",
-                    ["linear"],
-                    ["zoom"],
-                    4,
-                    13,
-                    9,
-                    18
-                ],
-                "text-transform": "uppercase",
-                "text-font": ["Oswald Medium", "Arial Unicode MS Bold"],
-                "text-padding": 1,
-                "text-field": [
-                    "step",
-                    ["zoom"],
-                    ["get", "abbr"],
-                    5,
-                    ["coalesce", ["get", "name_en"], ["get", "name"]]
-                ],
-                "text-letter-spacing": 0.2,
-                "text-max-width": 6
-            },
-            "paint": {
-                "text-color": "hsl(38, 34%, 0%)",
-                "text-halo-width": 1,
-                "text-halo-color": "hsla(0, 0%, 100%, 0.95)"
             }
         },
         {
@@ -1115,9 +1137,18 @@
                 "text-font": [
                     "step",
                     ["zoom"],
-                    ["literal", ["Roboto Medium", "Arial Unicode MS Regular"]],
+                    [
+                        "literal",
+                        [
+                            "Spectral ExtraLight Italic",
+                            "Arial Unicode MS Regular"
+                        ]
+                    ],
                     4,
-                    ["literal", ["Roboto Bold", "Arial Unicode MS Bold"]]
+                    [
+                        "literal",
+                        ["Spectral ExtraLight Italic", "Arial Unicode MS Bold"]
+                    ]
                 ],
                 "text-size": [
                     "interpolate",
@@ -1153,6 +1184,10 @@
                     ["hospital"],
                     "hospital-11",
                     ""
+                ],
+                "text-font": [
+                    "Spectral ExtraLight Italic",
+                    "Spectral ExtraLight Italic"
                 ]
             },
             "paint": {}
@@ -1164,26 +1199,66 @@
             "source-layer": "parkamenities-ber5gu",
             "layout": {
                 "icon-image": [
-                    "case",
-                    ["match", ["get", "Camping"], [1], true, false],
-                    "campsite-15",
-                    ["match", ["get", "Beach Access"], [1], true, false],
-                    "beach-15",
-                    ["match", ["get", "Bike"], [1], true, false],
-                    "bicycle-share-15",
-                    ["match", ["get", "Waterfalls"], [1], true, false],
-                    "waterfall-15",
-                    ["match", ["get", "Swimming"], [1], true, false],
-                    "swimming-15",
-                    ["match", ["get", "Fishing"], [1], true, false],
-                    "aquarium-15",
-                    ["match", ["get", "Picnicking"], [1], true, false],
-                    "picnic-site-15",
-                    ["==", ["get", "Picnicking"], 0],
+                    "step",
+                    ["zoom"],
                     "",
-                    ""
+                    5,
+                    [
+                        "case",
+                        ["match", ["get", "Camping"], [1], true, false],
+                        "campsite-15",
+                        ["match", ["get", "Beach Access"], [1], true, false],
+                        "beach-15",
+                        ["match", ["get", "Bike"], [1], true, false],
+                        "bicycle-share-15",
+                        ["match", ["get", "Waterfalls"], [1], true, false],
+                        "waterfall-15",
+                        ["match", ["get", "Swimming"], [1], true, false],
+                        "swimming-15",
+                        ["match", ["get", "Fishing"], [1], true, false],
+                        "aquarium-15",
+                        ["match", ["get", "Hiking"], [1], true, false],
+                        "hiking",
+                        ["match", ["get", "Picnicking"], [1], true, false],
+                        "picnic-site-15",
+                        ["match", ["get", "Horse"], [1], true, false],
+                        "horse-riding-15",
+                        ["match", ["get", "Viewpoint"], [1], true, false],
+                        "attraction-15",
+                        ["match", ["get", "Playground"], [1], true, false],
+                        "playground-15",
+                        ["==", ["get", "Disk Golf"], 0],
+                        "park-15",
+                        ""
+                    ],
+                    22,
+                    [
+                        "case",
+                        ["match", ["get", "Camping"], [1], true, false],
+                        "campsite-15",
+                        ["match", ["get", "Beach Access"], [1], true, false],
+                        "beach-15",
+                        ["match", ["get", "Bike"], [1], true, false],
+                        "bicycle-share-15",
+                        ["match", ["get", "Waterfalls"], [1], true, false],
+                        "waterfall-15",
+                        ["match", ["get", "Swimming"], [1], true, false],
+                        "swimming-15",
+                        ["match", ["get", "Fishing"], [1], true, false],
+                        "aquarium-15",
+                        ["match", ["get", "Picnicking"], [1], true, false],
+                        "picnic-site-15",
+                        ["==", ["get", "Hiking"], 0],
+                        "shoe-15",
+                        ["match", ["get", "Horse"], [1], true, false],
+                        "horse-riding-15",
+                        ""
+                    ]
                 ],
-                "text-font": ["Droid Serif Italic", "Arial Unicode MS Regular"],
+                "text-font": [
+                    "Spectral Light Italic",
+                    "Spectral ExtraLight Italic"
+                ],
                 "text-field": [
                     "step",
                     ["zoom"],
@@ -1195,14 +1270,57 @@
                 ],
                 "text-anchor": "top-left",
                 "text-rotate": 30,
-                "icon-size": 1.5
+                "icon-size": 1.5,
+                "text-offset": [1, 0]
             },
             "paint": {"text-opacity": 1}
+        },
+        {
+            "id": "state-label",
+            "type": "symbol",
+            "metadata": {},
+            "source": "composite",
+            "source-layer": "place_label",
+            "minzoom": 4,
+            "maxzoom": 8,
+            "filter": ["==", ["get", "type"], "state"],
+            "layout": {
+                "text-size": [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    2,
+                    10,
+                    5,
+                    18
+                ],
+                "text-transform": "uppercase",
+                "text-font": [
+                    "Spectral ExtraBold Italic",
+                    "Arial Unicode MS Bold"
+                ],
+                "text-padding": 1,
+                "text-offset": [0, 0],
+                "text-field": [
+                    "step",
+                    ["zoom"],
+                    ["get", "abbr"],
+                    1,
+                    ["coalesce", ["get", "name_en"], ["get", "name"]]
+                ],
+                "text-letter-spacing": 0.2,
+                "text-max-width": 6
+            },
+            "paint": {
+                "text-color": "hsl(38, 34%, 0%)",
+                "text-halo-width": 1,
+                "text-halo-color": "hsla(0, 0%, 100%, 0.95)"
+            }
         }
     ],
     "created": "2019-02-11T20:06:28.247Z",
     "id": "cjs0rq1dv01qr1fo6v8zqt2k4",
-    "modified": "2019-02-17T00:35:00.327Z",
+    "modified": "2019-02-17T20:14:25.072Z",
     "owner": "loweas",
     "visibility": "public",
     "draft": false
