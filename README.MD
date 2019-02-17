@@ -24,15 +24,12 @@ __Note: I also changed the individual colors of the svg files to different color
 ## Hiking icon
 Given the limited icons in mapbox, I created a hiking icon by using [Inkscape][]. <img src="/assets/image/hiking.svg">
 
-I also changed the individual colors of the svg files to different colors of the rainbow to recognize *Love is Love!*
-
-
-
 
 ## Hashtags
-When you zoom in to 8, the parks unique hashtag used on Instagram is revealed.
+When you zoom in to 8, the parks unique hashtag is revealed. The hashtags are user generated content from the social media site [Instagram][]. Though some parks may have multiple tags the most distinct tag was used for this map.
 
 [OregonExplore]: https://oregonexplorer.info/
 [Inkscape]: https://inkscape.org/
 [mapbox]: https://www.mapbox.com/
 [Oregonstateparks.org]: https://oregonstateparks.org/index.cfm?do=visit.dsp_find
+[Instagram]: https://www.instagram.com/
