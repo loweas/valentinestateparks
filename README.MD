@@ -7,6 +7,8 @@ I added layer's within mapbox of Oregon State Parks. The icon's represent unique
 
 The amenities data was collected individually (time consuming) from the [Oregonstateparks.org][] website. The amenities have a top down ordering. The importance of the order of these amenities can be argued. For this lay out the order was decided as:
 
+_Note: I also changed the individual colors of the svg files to different colors of the rainbow to recognize *Love is Love!*_
+
 1. Camping <img src="/assets/icons/campsite-15.svg">
 2. Beach Access <img src="/assets/icons/beach-15.svg">
 3. Biking <img src="/assets/icons/bicycle-share-15.svg">
