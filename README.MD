@@ -18,7 +18,7 @@ The amenities data was collected individually (time consuming) from the [Oregons
 9. Horse Riding Trails  <img src="/assets/icons/horse-riding-15.svg">
 10. Viewpoints <img src="/assets/icons/attraction-15.svg">
 11. Playground <img src="/assets/icons/playground-15.svg">
-12. Parks <img src="/assets/icons/parks-15.svg">
+12. Parks <img src="/assets/icons/park-15.svg">
 
 ## Hiking icon
 Given the limited icons in mapbox, I created a hiking icon by using [Inkscape][]. <img src="/assets/image/hiking.svg">
