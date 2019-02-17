@@ -5,7 +5,7 @@ This map is to pratice map styling in [mapbox][]. The coloring style is to refle
 ## Icon Description
 I added layer's within mapbox of Oregon State Parks. The icon's represent unique or important features to each park. This data was collected from [OregonExplore][]
 
-The amenities data was collected individually (time consuming) from the [Oregonstateparks.org][] website. The amenities have a top down ordering, which can be argued of what level of importance each amentity is. For this lay out the order was decided as:
+The amenities data was collected individually (time consuming) from the [Oregonstateparks.org][] website. The amenities have a top down ordering. The importance of the order of these amenities can be argued. For this lay out the order was decided as:
 
 1. Camping <img src="/assets/icons/campsite-15.svg">
 2. Beach Access <img src="/assets/icons/beach-15.svg">
